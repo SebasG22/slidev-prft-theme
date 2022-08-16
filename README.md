@@ -1,27 +1,20 @@
-# slidev-theme-prft-theme
+# @slidev/theme-prft-theme
+[![NPM version](https://img.shields.io/npm/v/@slidev/theme-apple-basic?color=3AB9D4&label=)](https://www.npmjs.com/package/@slidev/theme-apple-basic)
 
-[![NPM version](https://img.shields.io/npm/v/slidev-theme-prft-theme?color=3AB9D4&label=)](https://www.npmjs.com/package/slidev-theme-prft-theme)
+A Perficient like theme for [Slidev](https://github.com/slidevjs/slidev).
 
-A (...) theme for [Slidev](https://github.com/slidevjs/slidev).
+This theme match the perficient look and feel.
 
-<!--
-  Learn more about how to write a theme:
-  https://sli.dev/themes/write-a-theme.html
---->
-
-<!--
-  run `npm run dev` to check out the slides for more details of how to start writing a theme
--->
-
-<!--
-  Put some screenshots here to demonstrate your theme
-
-  Live demo: [...]
--->
+Inspired by the [Apple Theme](https://github.com/slidevjs/themes/tree/main/packages/theme-apple-basic) for Slidev.
 
 ## Install
+Add the dependency into your package.json from github.
 
-Add the following frontmatter to your `slides.md`. Start Slidev then it will prompt you to install the theme automatically.
+<pre><code>
+"slidev-theme-prft-theme": "github:SebasG22/slidev-prft-theme#6f4b16e8c0e659632dd5c1c46d64c0cc63bc727a"
+</code></pre>
+
+Then use it on your slides:
 
 <pre><code>---
 theme: <b>prft-theme</b>
@@ -33,48 +26,162 @@ Learn more about [how to use a theme](https://sli.dev/themes/use).
 
 This theme provides the following layouts:
 
-> TODO:
+### Title
+Usage: 
+```
 
-## Components
+---
+layout: intro
+header: 'Presentation Title'
+text: 'Presentation Subtitle'
+---
 
-This theme provides the following components:
+Author and Date.
 
-> TODO:
+```
+- Light:
+<img width="1613" alt="intro-light" src="https://user-images.githubusercontent.com/17608169/184878901-63fd023e-6278-48e2-941d-88a5f3a0cad5.png">
 
-## Contributing
-
-- `npm install`
-- `npm run dev` to start theme preview of `example.md`
-- Edit the `example.md` and style to see the changes
-- `npm run export` to generate the preview PDF
-- `npm run screenshot` to generate the preview PNG
-
-<!-- ---
-
-# What is Blockchain ?
-
-A blockchain is a database
-
-- Hosted public, decentralized, peer-to-peer network of computers
-- It is secure by cryptography and a consensus protocol
-- It is inmutable (No updates, No deletes without )
+- Dark:
+<img width="1613" alt="intro-dark" src="https://user-images.githubusercontent.com/17608169/184878652-d3465fa0-dad8-420d-8e3a-bf838cc6a7b6.png">
 
 ---
 
-# What is a Block ?
+### Title & Photo right
+Usage:
+```
+---
+layout: image-right
+image: 'image-url'
+---
 
-- Collection Verified Information Packaged Together
+# Slide Title
+## Slide Subtitle
 
-- You can image a Block as Bucket. Every Block start out as an empty bucket, then end-users make use of the network, filling the bucket with their transactions.
+* Slide bullet text
+```
+
+- Light:
+<img width="1614" alt="image-right-light" src="https://user-images.githubusercontent.com/17608169/184879700-e5550715-18e9-423b-a788-2eb050b3c7e1.png">
+
+- Dark: 
+<img width="1613" alt="image-right-dark" src="https://user-images.githubusercontent.com/17608169/184879731-83dc33cc-026b-499e-81d8-f162865037c0.png">
 
 ---
 
-# What is a transaction ?
+### Bullets
+Usage: 
+```
+---
+layout: bullets
+---
 
-- Sending Tokens
-- Changing names on a descentralized media site
-- Voting (Descentralized Autonomous Organization)
-- Swap tokens
-- Posting Comments
+* Slide bullet text
 
---- -->
+```
+
+- Light: 
+
+<img width="1612" alt="bullets-light" src="https://user-images.githubusercontent.com/17608169/184880317-5bdff875-5f7d-420f-82de-2f2cef0d094e.png">
+
+- Dark:
+
+<img width="1615" alt="bullets-dark" src="https://user-images.githubusercontent.com/17608169/184880341-6f648d06-cae3-46f6-8964-3da7fbd071fa.png">
+
+---
+
+### Section
+Usage: 
+```
+---
+layout: section
+---
+
+# Section Title
+
+```
+
+- Light: 
+<img width="1617" alt="section-light" src="https://user-images.githubusercontent.com/17608169/184880479-26cb7643-3ab8-42aa-b3b6-fd86c6770cb6.png">
+
+- Dark:
+<img width="1615" alt="section-dark" src="https://user-images.githubusercontent.com/17608169/184880575-8d4e0450-0a92-4ec9-9c5e-ea16de806f70.png">
+
+---
+
+### Statement
+Usage: 
+```
+---
+layout: statement
+---
+
+# Statement
+
+```
+- Light:
+<img width="1615" alt="statement-light" src="https://user-images.githubusercontent.com/17608169/184880748-d15162cb-7e75-41ac-bd30-536864d4ec48.png">
+
+- Dark:
+<img width="1611" alt="statement-dark" src="https://user-images.githubusercontent.com/17608169/184880794-52c3e99b-31a1-484a-be8f-324d88d992ea.png">
+
+---
+
+### Big fact
+Usage: 
+```
+---
+layout: fact
+---
+
+# 100%
+Fact information
+
+
+```
+
+- Light: 
+<img width="1614" alt="fact-light" src="https://user-images.githubusercontent.com/17608169/184880877-2e75ebdb-3841-426b-871e-4fd2c37001d5.png">
+
+- Dark:
+<img width="1614" alt="fact-dark" src="https://user-images.githubusercontent.com/17608169/184880914-9c539c40-3423-4088-b271-3af4a10cc1ee.png">
+
+---
+
+### Quote
+Usage: 
+```
+---
+layout: quote
+---
+
+# "Notable quote"
+Attribution
+
+```
+- Light: 
+<img width="1615" alt="quote-light" src="https://user-images.githubusercontent.com/17608169/184881009-f5f3829e-d5a1-437d-ac6b-d6517a3a79ca.png">
+
+- Dark:
+<img width="1604" alt="quote-dark" src="https://user-images.githubusercontent.com/17608169/184881046-872b2719-836f-43e9-ae00-93f3c2c2240b.png">
+
+---
+
+### Photo - 3
+Usage: 
+```
+---
+layout: 3-images
+imageLeft: 'image-url'
+imageTopRight: 'image-url'
+imageBottomRight: 'image-url'
+---
+```   
+- Light:
+<img width="1613" alt="3-images-light" src="https://user-images.githubusercontent.com/17608169/184881372-7f63fbed-d06f-4188-91cd-4746556f292d.png">
+
+- Dark:
+<img width="1610" alt="3-images-dark" src="https://user-images.githubusercontent.com/17608169/184881408-8484913d-6f44-491f-8a40-fe52d7900d41.png">
+
+
+---
