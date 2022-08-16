@@ -9,8 +9,7 @@ Inspired by the [Apple Theme](https://github.com/slidevjs/themes/tree/main/packa
 ## Install
 Add the dependency into your package.json from github.
 
-<pre><code>
-"slidev-theme-prft-theme": "github:SebasG22/slidev-prft-theme#6f4b16e8c0e659632dd5c1c46d64c0cc63bc727a"
+<pre><code>"slidev-theme-prft-theme": "github:SebasG22/slidev-prft-theme#6f4b16e8c0e659632dd5c1c46d64c0cc63bc727a"
 </code></pre>
 
 Then use it on your slides:
